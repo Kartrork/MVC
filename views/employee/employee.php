@@ -1,6 +1,6 @@
 <?php require_once './views/layout/nav.php' ?>
 <div class="container mt-3">
-    <a href="/employee/employee.php" class="btn btn-primary">Add New</a>
+    <a href="/employee/create" class="btn btn-primary">Add New</a>
     <table class="table">
         <thead>
             <tr>
@@ -22,8 +22,10 @@
                         <a href="/employee/edit?id=<?= $employee['id'] ?>" class="btn btn-warning">Edit</a> |
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#employee<?= $employee['id'] ?>">
                             delete
-                        </button>
+                        </button> |
                         <?php require 'delete.php' ?>
+
+                        <a href="/employee/show?id=<?= $employee['id'] ?>" class="btn btn-warning">View</a>
                     </td>
                 </tr>
             <?php endforeach ?>

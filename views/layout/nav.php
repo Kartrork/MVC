@@ -1,24 +1,68 @@
-<?php
-$navLink = [
-    ['name' => 'User', 'href' => '/'],
-    ['name' => 'Category', 'href' => '/category'],
-    ['name' => 'Product', 'href' => '/product'],
-    ['name' => 'Department', 'href' => '/department'],
-    ['name' => 'Employee', 'href' => '/employee'],
-]
-?>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">MVC PROJECT</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <?php foreach ($navLink as $link): ?>
-                    <a class="nav-link" href="<?= $link['href'] ?>"><?= $link['name'] ?></a>
-                <?php endforeach ?>
+<div class="sidebar" data-color="white" data-active-color="danger">
+    <div class="logo">
+        <a href="https://www.creative-tim.com" class="simple-text logo-mini">
+            <div class="logo-image-small">
+                <img src="../assets/img/logo-small.png">
             </div>
-        </div>
+            <!-- <p>CT</p> -->
+        </a>
+        <a href="https://www.creative-tim.com" class="simple-text logo-normal">
+            Creative Tim
+            <!-- <div class="logo-image-big">
+            <img src="../assets/img/logo-big.png">
+          </div> -->
+        </a>
     </div>
-</nav>
+    <div class="sidebar-wrapper">
+        <ul class="nav">
+            <li class="active ">
+                <a href="./">
+                    <i class="nc-icon nc-bank"></i>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li>
+                <a href="./user">
+                    <i class="nc-icon nc-single-02"></i>
+                    <p>User</p>
+                </a>
+            </li>
+            <li>
+                <a href="./map.html">
+                    <i class="nc-icon nc-pin-3"></i>
+                    <p>Maps</p>
+                </a>
+            </li>
+            <li>
+                <a href="./notifications.html">
+                    <i class="nc-icon nc-bell-55"></i>
+                    <p>Notifications</p>
+                </a>
+            </li>
+            <li>
+                <a href="./user.html">
+                    <i class="nc-icon nc-single-02"></i>
+                    <p>User Profile</p>
+                </a>
+            </li>
+            <li>
+                <a href="./tables.html">
+                    <i class="nc-icon nc-tile-56"></i>
+                    <p>Table List</p>
+                </a>
+            </li>
+            <li>
+                <a href="./typography.html">
+                    <i class="nc-icon nc-caps-small"></i>
+                    <p>Typography</p>
+                </a>
+            </li>
+            <li class="active-pro">
+                <a href="./upgrade.html">
+                    <i class="nc-icon nc-spaceship"></i>
+                    <p>Upgrade to PRO</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

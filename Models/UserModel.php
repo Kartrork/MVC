@@ -16,7 +16,8 @@ class UserModel
 
     function createUser($data)
     {
-        $stmt = $this->pdo->query("INSERT INTO users (name) VALUES (:name)", [
+        $this->pdo->query("INSERT INTO users (image ,name) VALUES (:image, :name)", [
+            'image' => $data['image'],
             'name' => $data['name'],
         ]);
     }
@@ -31,7 +32,8 @@ class UserModel
     }
     function updateUser($id, $data)
     {
-        $stmt = $this->pdo->query("UPDATE users SET name = :name WHERE id = :id", [
+        $this->pdo->query("UPDATE users SET image = :image,  name = :name WHERE id = :id", [
+            'image' => $data['image'],
             'name' => $data['name'],
             'id' => $id
         ]);
