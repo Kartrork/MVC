@@ -1,5 +1,4 @@
 <div class="main-panel">
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
         <div class="container-fluid">
             <div class="navbar-wrapper">
@@ -62,7 +61,6 @@
             </div>
         </div>
     </nav>
-    <!-- End Navbar -->
     <div class="content">
         <a href="/user/create" class="btn btn-primary">Add User</a>
         <div class="row">
@@ -101,10 +99,9 @@
                                             </td>
                                         </tr>
                                     <?php endforeach ?>
-
                                 </tbody>
                             </table>
-                        </div>
+                        </div>F
                     </div>
                 </div>
             </div>

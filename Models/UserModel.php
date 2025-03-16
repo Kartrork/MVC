@@ -13,7 +13,6 @@ class UserModel
         $users = $stmt->fetchAll();
         return $users;
     }
-
     function createUser($data)
     {
         $this->pdo->query("INSERT INTO users (image ,name) VALUES (:image, :name)", [
@@ -21,7 +20,6 @@ class UserModel
             'name' => $data['name'],
         ]);
     }
-
     function getUser($id)
     {
         $stmt = $this->pdo->query("SELECT * FROM users WHERE id = :id", [
